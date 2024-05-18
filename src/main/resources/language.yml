@@ -1,0 +1,50 @@
+only-player-command: "&cThis command can be only executed by a player!"
+
+command-usage: "&cUsage: /%command%"
+
+no-perm: "&cYou don't have a permission to execute this command!"
+
+update-available: "&6[RotatingItems] &aAn update &6%newversion% &afor the RotatingItems plugin is now available. Download it from &bhttps://www.spigotmc.org/resources/114685/"
+admin:
+  doesnt-exist: "&cRotatingItem with that name doesn't exist!"
+  reload:
+    all-config-reloaded: "&aData, Language and default config has been reloaded!"
+  help:
+    - "&aRotatingItems Admin Commands:"
+    - "&6GOLD &f- &eNumber &f| &aGREEN &f- &eText"
+    - "&e/rotatingitems &7- &bDisplays this message."
+    - "&e/rotatingitems create &a<name> &7- &bCreate new RotatingItem. Use 1 as speed and size for default."
+    - "&e/rotatingitems delete &a<name> &7- &bDelete RotatingItem."
+    - "&e/rotatingitems setsize &a<name> &6<size> &7- &bSet size of RotatingItem."
+    - "&e/rotatingitems setspeed &a<name> &6<speed> &7- &bSet speed of rotating animation."
+    - "&e/rotatingitems setrotationdirection &a<name> &a<clickwise/counterclockwise> &7- &bSet direction of rotation."
+    - "&e/rotatingitems setitem &a<name> &7- &bSet item of RotatingItem."
+    - "&e/rotatingitems move &a<name> &7- &bMove RotatingItem to your location."
+    - "&e/rotatingitems list &7- &bGet a list of RotatingItems with clickable actions."
+    - "&e/rotatingitems reload &7- &bReload the plugin's configs/data and RotatingItems."
+  create:
+    success: "&b%name% &aRotatingItem has been created successfully!"
+    no-item-in-main-hand: "&cYou don't have an item in your main hand!"
+    already-exists: "&cRotatingItem with that name already exists. Try /rotatingitems delete <name> to delete the RotatingItem"
+  delete:
+    success: "&aYou have successfully deleted RotatingItem &b%name%"
+  setsize:
+    success: "&b%name% &ahas been resized!"
+  setspeed:
+    success: "&aSpeed of &b%name% &ahas been set!"
+  move:
+    success: "&b%name% &ahas been moved to your location!"
+  list:
+    no-items: "&cThere is currently no RotatingItem created!"
+    top-message: "&aList of the RotatingItems:"
+    format: "$<color:#0077ff>-</color> <color:#fbff00>%name%</color> <gray>(</gray><color:#ff1900><click:run_command:'/rotatingitems delete %name%'><hover:show_text:'<aqua>Click to delete!</aqua>'>Delete</hover></click></color><gray>)</gray> <gray>(</gray><color:#00f299><click:run_command:'/rotatingitems move %name%'><hover:show_text:'<color:#cc00cc>Click to it move here!</color>'>Move</hover></click></color><gray>)</gray> Set <gray>(</gray><color:#ff4800>Direction</color><hover:show_text:'<color:#9bff05>Click to change direction to Clockwise!</color>'> <click:run_command:'/rotatingitems setrotationdirection %name% clockwise'><color:#0008ff>1</color></click></hover>/<color:#ff00b7><hover:show_text:'<color:#00ffbb>Click to change direction to Counterclockwise!</color>'><click:run_command:'/rotatingitems setrotationdirection %name% counterclockwise'>2</click></hover></color><gray>)</gray> <gray>(</gray><color:#0dff00><hover:show_text:'<color:#00ccfa>Click to show a command suggestion!</color>'><click:suggest_command:'/rotatingitems setsize %name% '>Size</click></hover></color><gray>)</gray> <gray>(</gray><color:#f5d800><hover:show_text:'<color:#00ff88>Click to show a command suggestion!</color>'><click:suggest_command:'/rotatingitems setspeed %name% '>Speed</click></hover></color><gray>)</gray>"
+  setitem:
+    success: "&aYou have successfully set item of &b%name%&a!"
+  setrotationdirection:
+    success: "&aYou have successfully set rotation direction of &b%name%&a!"
+  clickcommand:
+    add:
+      success: "&aClick command has been added to the &6%name%&a!"
+    remove:
+      success: "&cClick command has been removed from the &6%name%&c!"
+      error: "&cYou don't have that command added in the click commands of that RotatingItem!"

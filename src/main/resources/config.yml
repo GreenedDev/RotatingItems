@@ -1,0 +1,4 @@
+default-values:
+  size: 1
+  speed: 1
+  direction: clockwise

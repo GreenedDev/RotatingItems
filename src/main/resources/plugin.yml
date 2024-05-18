@@ -1,0 +1,13 @@
+name: RotatingItems
+version: '${version}'
+main: net.multylands.rotatingitems.RotatingItems
+api-version: '1.20'
+authors: [ GreenedDev ]
+description:
+  RotatingSkulls plugin.
+website: forgot to add
+commands:
+  rotatingitem:
+    aliases:
+      - rotatingitems
+    description: Main command of the plugin
